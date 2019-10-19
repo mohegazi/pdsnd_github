@@ -77,13 +77,13 @@ def load_data(city, month, day):
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
-
+    #The below if will based on the provided month and create a window fitting the selection
     if month != 'all':
         month_index = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6}
         df = df[df['Start Time'].dt.month == month_index[month]]
     else:
         df['month'] = df['Start Time'].dt.month
-
+    #The below will do same as month but for the provided day
     if day != 'all':
         df = df[df['Start Time'].dt.weekday_name == day.title()]
     else:
@@ -186,7 +186,7 @@ def user_stats(df):
         print("The most common year of birth : ", int(df['Birth Year'].mode()[0]))
     else:
         print("No birth year is found in supplied data")
-
+    
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
