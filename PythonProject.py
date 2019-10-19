@@ -152,7 +152,7 @@ def trip_duration_stats(df):
     average_timing = df['Trip Duration'].mean()
     read_average = str(dt.timedelta(seconds=int(average_timing)))
     print('The average travel time is: ', read_average)
-
+    # the read_average variable is used to make the time format readable by changing it using timedelta function
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -178,7 +178,7 @@ def user_stats(df):
         print("Total number of males: ", male, "\nTotal number of females: ", female)
     else:
         print('No gender data is found in supplied data')
-
+    # not all raw data contain gender information that's why exception must be used through else statment
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
         print("The earliest year of birth : ", int(df['Birth Year'].min()))
