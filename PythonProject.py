@@ -178,7 +178,7 @@ def user_stats(df):
         print("Total number of males: ", male, "\nTotal number of females: ", female)
     else:
         print('No gender data is found in supplied data')
-
+    # not all raw data contain gender information that's why exception must be used through else statment
     # TO DO: Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
         print("The earliest year of birth : ", int(df['Birth Year'].min()))
