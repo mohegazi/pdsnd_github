@@ -12,9 +12,9 @@ This Application can help you analyze several data from bike sharing, it can tel
 4. Total travelled time
 
 ### Files used
-PythonProject.py
-.gitignore
-README.md
+1. PythonProject.py
+2. .gitignore
+3. README.md
 
 ### Credits
 This channel assisted me a lot in understanding various Python techniques, its in Arabic, so it might be useful to Arab developers
