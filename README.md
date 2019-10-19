@@ -1,15 +1,21 @@
 ### Date created
-Include the date you created this project and README file.
+This project repo is created on 19th of October 2019.
 
 ### Project Title
-Replace the Project Title
+BikeShare Application
 
 ### Description
-Describe what your project is about and what it does
+This Application can help you analyze several data from bike sharing, it can tell you the following
+1. number of users on an specific date range from 1 state.
+2. Gender distribution
+3. Most popular hour, day, month
+4. Total travelled time
 
 ### Files used
-Include the files used
+PythonProject.py
+.gitignore
+README.md
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This channel assisted me a lot in understanding various Python techniques, its in Arabic, so it might be useful to Arab developers
+https://www.youtube.com/channel/UCxxljM6JkSvJVSD_T90ZnMw
